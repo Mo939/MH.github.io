@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <title>MH hospitals</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/logo-131x88.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+   <!-- CSS for doctors' login form -->
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+  }  
+  input[type=text],
+  input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+  }  
+  button {
+      background-color: #ADE8F4;
+      color: #03045E;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+  }
+  button:hover {
+      background: #03045E;
+      border: 2px solid #023E8A;
+      text-decoration: none;
+      color: #fff;
+  }  
+  .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #023E8A;
+  } 
+  .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+  }
+  img.avatar {
+      width: 5%;
+      border-radius: 50%;
+  }
+  .container {
+      padding: 16px;
+  }
+  span.psw {
+      float: right;
+      padding-top: 16px;
+  }  
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: #CAF0F8;
+      background-color: #CAF0F8;
+      padding-top: 60px;
+  }
+  .modal-content {
+      background-color: #fff;
+      margin: 5% auto 15% auto;
+      border: 1px solid #fff;
+      width: 80%;
+  }  
+  .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #03045E;
+      font-size: 35px;
+      font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+      color: #023E8A;
+      cursor: pointer;
+  }  
+  .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+      from {
+          -webkit-transform: scale(0)
+      }
+      to {
+          -webkit-transform: scale(1)
+      }
+  }
+  
+  @keyframes animatezoom {
+      from {
+          transform: scale(0)
+      }
+      to {
+          transform: scale(1)
+      }
+  }
+    
+  @media screen and (max-width: 300px) {
+      span.psw {
+          display: block;
+          float: none;
+      }
+      .cancelbtn {
+          width: 100%;
+      }
+  }
+</style> <!-- end of embedded style, for doctors' login form -->
+<script>
+  function login () {
+    alert("Sorry, this service is not available yet \n عذرا، هذه الخدمة غير متوفرة في الوقت الحالي");
+    return false;
+  }
+  </script>
+  </head>
+
+  <body>
+  <!-- -------------------------------------------------------------
+  # Navigation Menu
+  ------------------------------------------------------------- -->
+  <nav class="navbar navbar-expand-lg nav-back fixed-top" 
+  id="mainNav">
+  <div>
+      <span class="navbar-logo">
+          <a href="index.html">
+              <img src="images/logo-131x88.png" alt="logo" style="height: 4.3rem;">
+          </a>
+      </span>
+      
+  </div>
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button"
+         data-toggle="collapse" data-target="#navbarResponsive" 
+         aria-controls="navbarResponsive" aria-expanded="false" 
+         aria-label="Toggle navigation"><i class="fas fa-syringe fa-2x"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" 
+              href="contact us.html">اتصل بنا</a></li>
+            <li class="nav-item"><a class="nav-link" 
+                href="about us.html">نبذة عنا</a></li>
+            <li class="nav-item"><a class="nav-link"
+                  href="#">الأخبار</a></li>
+            <li class="nav-item"><a class="nav-link" 
+                href="clinics.html">العيادات الخارجية</a></li>
+            <li class="nav-item"><a class="nav-link" 
+                href="ourDoctors.html"> أطباؤنا</a></li>
+            <li class="nav-item"><a class="nav-link" 
+                  href="index.html">الرئيسية</a></li>
+          </ul>
+      </div>
+    </div>
+</nav>
+<br> <br> <br> <br> <br> 
+<!-- login section -->
+<section>  
+<h4 style="color:#023E8A;">تسجيل الدخول للأطباء </h4> <br>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" onsubmit="login ()" action="ourDoctors.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="./images/login avatar.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</section> <!-- end of login section  -->
+
+<!-- ======= doctors Section ======= -->
+<section id="team" class="team mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+            <h1 style=" text-align: center; color: #023E8A;">أطباؤنا</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="member">
+                <div class="image"><img src="images/doctor1.png" 
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>د. بيآته تيمرمان</h4>
+                  <span> مديرة قسم العلاج بالجزيئات </span>
+                  <p>أخصائية في العلاج الإشعاعي</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div class="member">
+                <div class="image"><img src="images/doctor2.png" 
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>د. كلاوس ديتريش</h4>
+                  <span>مدير قسم الجراحة</span>
+                  <p>أخصائي في جراحة السمنة</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+              <div class="member">
+                <div class="image"><img src="images/doctor3.png" 
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>د. بيتر شورمان</h4>
+                  <span>كبير الأطباء</span>
+                  <p> جراحة العيون </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mt-4">
+              <div class="member">
+                <div class="image">
+                  <img src="images/doctor4.png" 
+                  class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>د. هاينتز غونتر</h4>
+                  <span>أخصائي جراحة القلب</span>
+                  <p>الجراحة القلبية الموجهة بالتنظير الباطني</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End doctors Section -->
+
+ <!-- Footer-->
+ <footer class="footer py-4 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 text-lg-right">
+                <h6 class="mr-3 text"> تابعنا على </h6> </div>
+            <div class="col-lg-12 my-3 my-lg-0">
+                <a class="btn btn-back btn-social mx-2" href="https://twitter.com/mh-hospitals">
+                  <i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-back btn-social mx-2" href="https://facebook.com/mh-hospitals">
+                    <i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-back btn-social mx-2" href="https://instagram.com/mh-hospitals">
+                      <i class="fab fa-instagram"></i></a>
+            </div>
+              <div class="col-12 mt-4">
+                <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7" style="color: #fff;">
+                    ©MH hospitals - جميع الحقوق محفوظة</p></div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery, Popper.js, Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</body>
+</html>

@@ -1,0 +1,335 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+
+.nav-back {
+    background: #CAF0F8;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.nav-link {
+    color: #03045E;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #023E8A;
+}
+
+.navbar-toggler {
+    outline: none!important;
+}
+
+
+/*--------------------------------------------------------------
+  # cover Section
+  --------------------------------------------------------------*/
+
+#cover {
+    width: 100%;
+    height: 150vh;
+    background: url("./images/background.jpg") center center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.9;
+}
+
+#cover .container {
+    padding-top: 80px;
+}
+
+#cover:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#cover h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #03045E;
+}
+
+#cover h2 {
+    color: #03045E;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.main-btn {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #03045E;
+    font-weight: bold;
+}
+
+.main-btn:hover {
+    background: #03045E;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #ADE8F4;
+}
+
+
+/*--------------------------------------------------------------
+  # Services
+  --------------------------------------------------------------*/
+
+.service {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #0096C7;
+    box-shadow: 0px 5px 90px 0px #48CAE4;
+}
+
+.service .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #03045E;
+    border-radius: 50px;
+}
+
+.service .icon i {
+    font-size: 32px;
+    line-height: 1;
+    position: relative;
+}
+
+.service h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+}
+
+.service h4 a {
+    color: #03045E;
+}
+
+.service p {
+    line-height: 24px;
+    font-size: 16px;
+    color: #ADE8F4;
+    margin-bottom: 0;
+}
+
+.services i {
+    color: #47aeff;
+}
+
+
+/*----about us -section*/
+
+.about-section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.about-heading {
+    text-transform: uppercase;
+}
+
+.about-heading .about-heading-upper {
+    display: block;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.about-heading .about-heading-lower {
+    display: block;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.bg-faded {
+    background-color: #0096C7;
+}
+
+.about-button .btn-color {
+    background: #023E8A;
+    font-weight: bold;
+    color: #fff;
+}
+
+.about {
+    position: relative;
+}
+
+@media (min-width: 992px) {
+    .about .about-text {
+        left: 0;
+        width: 50%;
+        margin-top: 3rem;
+        position: absolute;
+    }
+    .about .about-text .about-button {
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: -2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about .about-text {
+        width: 100%;
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # Team
+  --------------------------------------------------------------*/
+
+.team {
+    background: #fff;
+}
+
+.team .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team .member .image {
+    overflow: hidden;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.team .member .image img {
+    transition: ease-in-out 0.3s;
+}
+
+.team .member:hover img {
+    transform: scale(1.1);
+}
+
+.team .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #03045E;
+}
+
+.team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.team .member span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #03045E;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team .member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+
+/*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
+
+.contact-box {
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 20px #ADE8F4;
+    padding: 20px 0 30px 0;
+    background: #0096C7;
+}
+
+.contact-box i {
+    font-size: 32px;
+    color: #03045E;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.contact-box h3 {
+    font-size: 20px;
+    color: #CAF0F8;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.contact-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.contact button {
+    background: #0096C7;
+    border: none;
+    padding: 10px;
+}
+
+.contact button:hover {
+    background: #03045E;
+    color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    background: #023E8A;
+}
+
+.footer .btn-back {
+    background: #90E0EF;
+    color: #03045E;
+}
+
+.footer .text {
+    color: #fff;
+}

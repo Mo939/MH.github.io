@@ -1,0 +1,186 @@
+   <!DOCTYPE html>
+   <html lang="ar">
+   <head>
+    <title>MH hospitals</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/logo-131x88.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <!-- -------------------------------------------------------------
+  # Navigation Menu
+  ------------------------------------------------------------- -->
+  <nav class="navbar navbar-expand-lg nav-back fixed-top" 
+  id="mainNav">
+  <div>
+      <span class="navbar-logo">
+          <a href="index.html">
+              <img src="images/logo-131x88.png" alt="logo" style="height: 4.3rem;">
+          </a>
+      </span>
+      
+  </div>
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button"
+         data-toggle="collapse" data-target="#navbarResponsive" 
+         aria-controls="navbarResponsive" aria-expanded="false" 
+         aria-label="Toggle navigation"><i class="fas fa-syringe fa-2x"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" 
+              href="contact us.html">اتصل بنا</a></li>
+            <li class="nav-item"><a class="nav-link" 
+                href="about us.html">نبذة عنا</a></li>
+            <li class="nav-item"><a class="nav-link"
+                  href="#">الأخبار</a></li>
+            <li class="nav-item"><a class="nav-link" 
+                href="clinics.html">العيادات الخارجية</a></li>
+            <li class="nav-item"><a class="nav-link" 
+                href="ourDoctors.html"> أطباؤنا</a></li>
+            <li class="nav-item"><a class="nav-link" 
+                  href="index.html">الرئيسية</a></li>
+          </ul>
+      </div>
+    </div>
+</nav>
+<script>
+  function validateForm()
+  {
+  var a=document.forms["myForm"]["name"].value;
+  var b=document.forms["myForm"]["phone"].value;
+  var c=document.forms["myForm"]["email"].value;
+  var d=document.forms["myForm"]["message"].value;
+
+  if (a==null || a=="")
+    {
+    alert(" أدخل اسمك");
+    return false;
+  }
+  else if(b==null || b=="")
+    {
+    alert(" أدخل رقم جوالك");
+    return false;
+    }
+    else if(c==null || c=="")
+    {
+    alert("البريد الإلكتروني مطلوب");
+    return false;
+    }
+  else if(d==null || d=="")
+    {
+    alert("أدخل رسالتك !!!");
+    return false;
+    }
+    else{
+      alert("تم إرسال رسالتك بنجاح");
+    }
+  }
+  </script>
+  <br><br><br><br><br>
+   <!-- ======= Contact ======= -->
+   <section class="contact">
+    <div class="container">
+
+      <div class="section-title text-center mt-5">
+        <h2 style="color: #03045E;">رسالتك تهمنا</h2>
+        <p style="color: #023E8A;">سيتم الرد عليك في أقرب وقت ممكن</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="contact-box">
+                <i class="fas fa-map-signs"></i>
+                <h3>العنوان</h3>
+                <p>طريق الملك فهد، خميس مشيط 62432، المملكة العربية السعودية</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-box mt-4">
+                <i class="fas fa-envelope"></i>
+                <h3>للتواصل عبر البريد الالكتروني</h3>
+                <p>info@mh-hospitals.com.sa<br>msq.939@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-box mt-4">
+                <i class="fas fa-phone"></i>
+                <h3>اتصل بنا</h3>
+                <p>7/24 متاح يوميا<br>920019666</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <form name="myForm" onsubmit="return validateForm()" action="index.html" method="post">
+            <div class="form-row">
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" name="phone" 
+              id="phone" placeholder="رقم الجوال"></div>
+
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" 
+                placeholder="إسمك"></div> 
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 form-group">
+                    <input type="text" class="form-control" name="subject" 
+              id="subject" placeholder="موضوع الرسالة"></div>
+                  <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" 
+                    id="email" placeholder="البريد الالكتروني"></div>
+              </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="أرسل رسالة"></textarea>
+             </div>
+             <div class="text-center">
+               <button type="submit">إرسال</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+ <!-- Footer-->
+ <footer class="footer py-4 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 text-lg-right">
+                <h6 class="mr-3 text"> تابعنا على </h6> </div>
+            <div class="col-lg-12 my-3 my-lg-0">
+                <a class="btn btn-back btn-social mx-2" href="https://twitter.com/mh-hospitals">
+                  <i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-back btn-social mx-2" href="https://facebook.com/mh-hospitals">
+                    <i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-back btn-social mx-2" href="https://instagram.com/mh-hospitals">
+                      <i class="fab fa-instagram"></i></a>
+            </div>
+              <div class="col-12 mt-4">
+                <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7" style="color: #fff;">
+                    ©MH hospitals - جميع الحقوق محفوظة</p></div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery, Popper.js, Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
